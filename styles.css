@@ -1,0 +1,413 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 50%, #1a1a1a 100%);
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.sobre-nosotros {
+    display: flex;
+    padding: 40px;
+    text-align: center; 
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes-lado-a-lado {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.persona {
+    text-align: center;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Eliminado efecto hover de persona */
+
+.persona img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Eliminado efecto hover de imagen de persona */
+
+.persona .descripcion {
+    margin-top: 20px;
+}
+
+.persona .descripcion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.persona .descripcion strong {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+/* Mejoras para el header */
+header {
+    background: linear-gradient(135deg, #2b2b2b 0%, #3a3a3a 100%);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffd700;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-style: italic;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a:hover {
+    color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Contenido principal */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 80px;
+    padding: 30px;
+    background: rgba(43, 43, 43, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Solo mantener hover en la navegación del header */
+
+/* Títulos en amarillo */
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #ffd700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffd700, #ffed4e);
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 10px;
+}
+
+ul li::before {
+    content: '✦';
+    color: #ffd700;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+/* Galería mejorada */
+.Galería {
+    text-align: center;
+}
+
+.Galería > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.Galería img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Imágenes verticales para familia y maternidad */
+.Galería img[src*="familia"],
+.Galería img[src*="mami"],
+.Galería img[src*="luna"] {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Imágenes horizontales para rodaje */
+.Galería img[src*="rodaje"] {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Eliminado efecto hover de imágenes de galería */
+
+/* Formulario de contacto mejorado */
+.form-container {
+    background: linear-gradient(135deg, #2b2b2b 0%, #3a3a3a 100%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    margin-bottom: 30px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(68, 68, 68, 0.8);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Contenedor para teléfono */
+.phone-container {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.phone-container select {
+    width: 200px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.phone-input-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.phone-input-container input {
+    flex: 1;
+    margin: 0;
+    padding-left: 45px;
+}
+
+.country-flag {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    z-index: 10;
+    pointer-events: none;
+    display: block;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 4px;
+    border-radius: 4px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para el selector de país */
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffd700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 45px;
+}
+
+select option {
+    background: #2b2b2b;
+    color: #fff;
+    padding: 10px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: rgba(68, 68, 68, 1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    background: rgba(68, 68, 68, 1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+
+button {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1e1e1e;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Eliminado efecto hover del botón */
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sobre-nosotros {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .Galería > div {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Responsive para el campo de teléfono */
+    .phone-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .phone-container select {
+        width: 100%;
+    }
+    
+    .phone-input-container {
+        width: 100%;
+    }
+    
+    .phone-input-container input {
+        width: 100%;
+    }
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
