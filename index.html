@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page elegante con fondo fijo y desplazamiento interactivo.">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <h1>REMBRANT CREATIVE STUDIO</h1>
+        <p>Capturamos lo invisible: emociones, miradas y sensaciones.</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#servicios">Nuestros Servicios</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="inicio" class="Bienvenido">
+            <h2>Bienvenidos</h2>
+            <p>Somos un espacio donde las ideas toman forma a través del diseño, la imagen y la emoción.</p> 
+            <p>Somos el lugar donde la intuición artística se convierte en soluciones visuales que inspiran, conectan y transforman.</p>
+        </section>
+       <h2>Sobre Nosotros</h2>
+       <section id="sobre-nosotros" class="sobre-nosotros">
+       
+
+              <div class="persona">
+              <img src="Kevin.png" alt="Kevin Rubiano" width="300">
+              <div class="descripcion">
+              <p><strong>KEVIN RUBIANO</strong><br>Director de Cine, Productor y Fotógrafo.</p>
+              </div>
+            </div>
+
+              <div class="persona">
+              <img src="Andrea.png" alt="Andrea Guzmán" width="300">
+              <div class="descripcion">
+              <p><strong>ANDREA GUZMÁN</strong><br>Diseñadora gráfica, Directora de arte y maquilladora profesional.</p>
+              </div>
+              </div>
+        </section>
+
+
+        <section id="servicios" class="Servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Fotografía de maternidad</li>
+                <li>Fotografía familiar</li>
+                <li>Fotografía artística</li>
+                <li>Books actorales</li>
+                <li>Cubrimiento de eventos</li>
+                <li>Filmación de comerciales y cortometrajes</li>
+            </ul>
+        </section>
+
+        <section id="galeria" class="Galería">
+            <h2>Galería</h2>
+            <p>Explora imágenes de nuestras instalaciones:</p>
+            <div>
+                <img src="familia1.jpg" alt="Momentos únicos" width="300">
+                <img src="mami2.jpg" alt="Innolvidable" width="300">
+                <img src="mami3.jpg" alt="Memorable" width="300">
+                <img src="rodaje1.jpg" alt="En rodaje" width="300">
+                <img src="rodaje2.JPG" alt="Para comercial" width="300">
+                <img src="luna.JPG" alt="Luna" width="300">
+            </div>
+        </section>
+
+        <section id="contacto" class="Contáctanos">
+            <div class="form-container">
+                <h2>Contáctanos</h2>
+                <form action="#" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    
+                    <div class="phone-container">
+                        <select name="pais" id="pais" required>
+                            <option value="">País</option>
+                            <option value="+57" data-flag="🇨🇴">🇨🇴 Colombia (+57)</option>
+                            <option value="+1" data-flag="🇺🇸">🇺🇸 Estados Unidos (+1)</option>
+                            <option value="+52" data-flag="🇲🇽">🇲🇽 México (+52)</option>
+                            <option value="+34" data-flag="🇪🇸">🇪🇸 España (+34)</option>
+                            <option value="+54" data-flag="🇦🇷">🇦🇷 Argentina (+54)</option>
+                            <option value="+56" data-flag="🇨🇱">🇨🇱 Chile (+56)</option>
+                            <option value="+51" data-flag="🇵🇪">🇵🇪 Perú (+51)</option>
+                            <option value="+593" data-flag="🇪🇨">🇪🇨 Ecuador (+593)</option>
+                            <option value="+58" data-flag="🇻🇪">🇻🇪 Venezuela (+58)</option>
+                            <option value="+55" data-flag="🇧🇷">🇧🇷 Brasil (+55)</option>
+                            <option value="+33" data-flag="🇫🇷">🇫🇷 Francia (+33)</option>
+                            <option value="+49" data-flag="🇩🇪">🇩🇪 Alemania (+49)</option>
+                            <option value="+44" data-flag="🇬🇧">🇬🇧 Reino Unido (+44)</option>
+                            <option value="+39" data-flag="🇮🇹">🇮🇹 Italia (+39)</option>
+                            <option value="+31" data-flag="🇳🇱">🇳🇱 Países Bajos (+31)</option>
+                            <option value="+46" data-flag="🇸🇪">🇸🇪 Suecia (+46)</option>
+                            <option value="+47" data-flag="🇳🇴">🇳🇴 Noruega (+47)</option>
+                            <option value="+45" data-flag="🇩🇰">🇩🇰 Dinamarca (+45)</option>
+                            <option value="+358" data-flag="🇫🇮">🇫🇮 Finlandia (+358)</option>
+                            <option value="+41" data-flag="🇨🇭">🇨🇭 Suiza (+41)</option>
+                            <option value="+43" data-flag="🇦🇹">🇦🇹 Austria (+43)</option>
+                            <option value="+32" data-flag="🇧🇪">🇧🇪 Bélgica (+32)</option>
+                            <option value="+351" data-flag="🇵🇹">🇵🇹 Portugal (+351)</option>
+                            <option value="+30" data-flag="🇬🇷">🇬🇷 Grecia (+30)</option>
+                            <option value="+48" data-flag="🇵🇱">🇵🇱 Polonia (+48)</option>
+                            <option value="+420" data-flag="🇨🇿">🇨🇿 República Checa (+420)</option>
+                            <option value="+36" data-flag="🇭🇺">🇭🇺 Hungría (+36)</option>
+                            <option value="+7" data-flag="🇷🇺">🇷🇺 Rusia (+7)</option>
+                            <option value="+81" data-flag="🇯🇵">🇯🇵 Japón (+81)</option>
+                            <option value="+86" data-flag="🇨🇳">🇨🇳 China (+86)</option>
+                            <option value="+82" data-flag="🇰🇷">🇰🇷 Corea del Sur (+82)</option>
+                            <option value="+91" data-flag="🇮🇳">🇮🇳 India (+91)</option>
+                            <option value="+61" data-flag="🇦🇺">🇦🇺 Australia (+61)</option>
+                            <option value="+64" data-flag="🇳🇿">🇳🇿 Nueva Zelanda (+64)</option>
+                            <option value="+27" data-flag="🇿🇦">🇿🇦 Sudáfrica (+27)</option>
+                            <option value="+971" data-flag="🇦🇪">🇦🇪 Emiratos Árabes (+971)</option>
+                            <option value="+966" data-flag="🇸🇦">🇸🇦 Arabia Saudita (+966)</option>
+                            <option value="+972" data-flag="🇮🇱">🇮🇱 Israel (+972)</option>
+                            <option value="+90" data-flag="🇹🇷">🇹🇷 Turquía (+90)</option>
+                            <option value="+20" data-flag="🇪🇬">🇪🇬 Egipto (+20)</option>
+                            <option value="+212" data-flag="🇲🇦">🇲🇦 Marruecos (+212)</option>
+                            <option value="+234" data-flag="🇳🇬">🇳🇬 Nigeria (+234)</option>
+                            <option value="+254" data-flag="🇰🇪">🇰🇪 Kenia (+254)</option>
+                        </select>
+                        <div class="phone-input-container">
+                            <span id="country-flag" class="country-flag">🇨🇴</span>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono" required>
+                        </div>
+                    </div>
+                    
+                    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Función para actualizar la bandera del país
+        function updateCountryFlag() {
+            const countrySelect = document.getElementById('pais');
+            const countryFlag = document.getElementById('country-flag');
+            const telefonoInput = document.getElementById('telefono');
+            
+            if (!countrySelect || !countryFlag || !telefonoInput) {
+                console.error('Elementos no encontrados');
+                return;
+            }
+            
+            const selectedOption = countrySelect.options[countrySelect.selectedIndex];
+            
+            if (selectedOption && selectedOption.value) {
+                const flag = selectedOption.getAttribute('data-flag');
+                const countryCode = selectedOption.value;
+                
+                console.log('País seleccionado:', selectedOption.text, 'Bandera:', flag);
+                
+                // Actualizar la bandera
+                countryFlag.textContent = flag;
+                countryFlag.style.display = 'block';
+                
+                // Actualizar el placeholder con el código del país
+                telefonoInput.placeholder = `Número de teléfono (${countryCode})`;
+                
+                // Agregar el código del país al inicio del input si está vacío
+                if (!telefonoInput.value || telefonoInput.value === '') {
+                    telefonoInput.value = countryCode + ' ';
+                }
+            } else {
+                // Si no hay país seleccionado, mostrar bandera por defecto
+                countryFlag.textContent = '🇨🇴';
+                countryFlag.style.display = 'block';
+                telefonoInput.placeholder = 'Número de teléfono';
+                telefonoInput.value = '';
+            }
+        }
+
+        // Event listener para el cambio de país
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM cargado, inicializando banderas...');
+            
+            const countrySelect = document.getElementById('pais');
+            const countryFlag = document.getElementById('country-flag');
+            
+            if (countrySelect && countryFlag) {
+                countrySelect.addEventListener('change', function() {
+                    console.log('País cambiado a:', this.value);
+                    updateCountryFlag();
+                });
+                
+                // Inicializar el estado
+                updateCountryFlag();
+            } else {
+                console.error('No se encontraron los elementos necesarios');
+            }
+        });
+    </script>
+</body>
+</html>
